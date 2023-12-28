@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="403" id="DcV-zJ-C6f" customClass="VideoPreviewCell" customModule="_1_module" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="661" height="403"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="DcV-zJ-C6f" id="rUQ-Gq-Sn9">
+                <rect key="frame" x="0.0" y="0.0" width="661" height="403"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="8LI-Fi-cZl" userLabel="video">
+                        <rect key="frame" x="0.0" y="1.6666666666666714" width="661" height="250.33333333333331"/>
+                        <color key="tintColor" systemColor="labelColor"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Ic-ay-zEO" userLabel="bottomContainer">
+                        <rect key="frame" x="0.0" y="253" width="661" height="150"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="xgB-uO-Yak" userLabel="avatar">
+                                <rect key="frame" x="16" y="26.000000000000007" width="100" height="98.666666666666686"/>
+                                <color key="tintColor" systemColor="labelColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="gXq-jJ-a0g"/>
+                                    <constraint firstAttribute="width" constant="100" id="h0o-LT-bGm"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Video Description. Not Clickbait Video Description. Not Clickbait Video Description. Not Clickbait " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bdw-bo-5tO" userLabel="author">
+                                <rect key="frame" x="132" y="24.999999999999996" width="513" height="40.666666666666657"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Video Author. 500k views" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DHc-Ar-aHW" userLabel="video ">
+                                <rect key="frame" x="451.33333333333331" y="104" width="193.66666666666669" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="DHc-Ar-aHW" firstAttribute="width" secondItem="bdw-bo-5tO" secondAttribute="width" multiplier="0.377518" id="1vn-WB-IJI"/>
+                            <constraint firstAttribute="trailing" secondItem="DHc-Ar-aHW" secondAttribute="trailing" constant="16" id="3Iw-g6-JRj"/>
+                            <constraint firstItem="bdw-bo-5tO" firstAttribute="leading" secondItem="xgB-uO-Yak" secondAttribute="trailing" constant="16" id="510-NE-sV3"/>
+                            <constraint firstAttribute="trailing" secondItem="bdw-bo-5tO" secondAttribute="trailing" constant="16" id="FtZ-x7-6a8"/>
+                            <constraint firstItem="xgB-uO-Yak" firstAttribute="leading" secondItem="0Ic-ay-zEO" secondAttribute="leading" constant="16" id="Pc9-W7-Aqw"/>
+                            <constraint firstAttribute="height" constant="150" id="Uf7-8l-AiA"/>
+                            <constraint firstItem="xgB-uO-Yak" firstAttribute="centerY" secondItem="0Ic-ay-zEO" secondAttribute="centerY" id="bH6-ES-XzQ"/>
+                            <constraint firstItem="bdw-bo-5tO" firstAttribute="top" secondItem="xgB-uO-Yak" secondAttribute="top" id="bnV-fT-TNf"/>
+                            <constraint firstItem="DHc-Ar-aHW" firstAttribute="bottom" secondItem="xgB-uO-Yak" secondAttribute="bottom" id="xPW-g3-fty"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="8LI-Fi-cZl" firstAttribute="top" secondItem="rUQ-Gq-Sn9" secondAttribute="top" id="7wh-wO-WuH"/>
+                    <constraint firstItem="8LI-Fi-cZl" firstAttribute="leading" secondItem="rUQ-Gq-Sn9" secondAttribute="leading" id="9d8-9A-3kD"/>
+                    <constraint firstAttribute="trailing" secondItem="0Ic-ay-zEO" secondAttribute="trailing" id="Z0b-qT-7wN"/>
+                    <constraint firstItem="0Ic-ay-zEO" firstAttribute="leading" secondItem="rUQ-Gq-Sn9" secondAttribute="leading" id="ana-C2-EkJ"/>
+                    <constraint firstAttribute="trailing" secondItem="8LI-Fi-cZl" secondAttribute="trailing" id="g1b-Fn-MsD"/>
+                    <constraint firstAttribute="bottom" secondItem="0Ic-ay-zEO" secondAttribute="bottom" id="i7j-bH-tix"/>
+                    <constraint firstItem="0Ic-ay-zEO" firstAttribute="top" secondItem="8LI-Fi-cZl" secondAttribute="bottom" id="mbd-cO-0ih"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="videoimage" destination="8LI-Fi-cZl" id="IRk-bM-5fk"/>
+            </connections>
+            <point key="canvasLocation" x="709" y="-8"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="person" catalog="system" width="128" height="121"/>
+        <image name="person.circle" catalog="system" width="128" height="123"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
